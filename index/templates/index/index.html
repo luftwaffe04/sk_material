@@ -1,0 +1,652 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title>SK-Materials</title>
+
+    <!-- Index(+Common) CSS / Index_Media CSS / Common_Media CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/media_index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/media_common.css' %}">
+
+    <!-- Internal CSS -->
+    <style type="text/css"></style>
+</head>
+<body>
+<div class="navbg"></div>
+<header id="header">
+    <div class="wrap">
+        <h1>
+            <img class="logo" src="{% static 'img/logo_fc.svg' %}" alt="SK Materials 로고">
+        </h1>
+    </div>
+
+    <nav class="topMenu">
+        <div class="wrap">
+            <ul>
+                <li><a href="./index.html"><img src="{% static 'img/mq_home.svg' %}" alt="">홈</a></li>
+                <li><a href="#"><img src="{% static 'img/mq_login.svg' %}" alt="">로그인</a></li>
+                <li><a href="#"><img src="{% static 'img/mq_register.svg' %}" alt="">회원가입</a></li>
+                <li><a href="#"><img src=".{% static 'img/mq_translate.svg' %}" alt="">English</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="navigator">
+        <div class="wrap">
+            <ul class="depth1">
+                <li>
+                    <a href="#">기업정보<span>About Co.</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">기업개요</a></li>
+                        <li><a href="#">경영활동</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품정보<span>Products</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">NF<sub>3</sub></a></li>
+                        <li><a href="#">SiH<sub>4</sub></a></li>
+                        <li><a href="#">WF<sub>6</sub></a></li>
+                        <li><a href="#">SiH2<sub>2</sub>Cl<sub>2</sub></a></li>
+                        <li><a href="#">Si<sub>2</sub>H<sub>6</sub></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">투자정보<span>Investment</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">주식정보</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">인사정보<span>Personnel</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">인사제도</a></li>
+                        <li><a href="#">직무소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">채용안내<span>Employment</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">채용문의</a></li>
+                        <li><a href="#">지원서 작성</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보센터<span>Publicity</span></a>
+                    <ul class="depth2">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">사보</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger" onclick="hamburger_click()">
+        <img id="hamButton" src="{% static 'img/menu.svg' %}" alt="SK머티리얼즈 모바일 페이지 메뉴버튼">
+    </nav>
+</header> <!-- End of #header -->
+
+<section id="mainVisual">
+    <h2 class="hidden">메인 비주얼 이미지</h2>
+    <ul id="slider">
+        <li class="opacityView"><span class="hidden">메인 이미지 1</span></li>
+        <li><span class="hidden">메인 이미지 2</span></li>
+        <li><span class="hidden">메인 이미지 3</span></li>
+        <li><span class="hidden">메인 이미지 4</span></li>
+    </ul>
+
+    <div class="wrap">
+        <nav class="bulletBox">
+            <a href="#"><img src="{% static 'img/ico_pm_55_on.png' %}" alt="메인 이미지 1번 보기"></a>
+            <a href="#"><img src="{% static 'img/ico_pm_55_off.png' %}" alt="메인 이미지 2번 보기"></a>
+            <a href="#"><img src="{% static 'img/ico_pm_55_off.png' %}" alt="메인 이미지 3번 보기"></a>
+            <a href="#"><img src="{% static 'img/ico_pm_55_off.png' %}" alt="메인 이미지 4번 보기"></a>
+        </nav>
+    </div>
+
+    <!-- Mobile Page Main Image -->
+    <img src="{% static 'img/mainVisual_mo.jpg' %}" alt="모바일 페이지 메인 비주얼">
+</section> <!-- End of .mainVisual -->
+
+<div class="wrap">
+    <section id="mainContents">
+        <section class="section1">
+            <header class="heading">
+                <h2>Company</h2>
+                <p>글로벌 첨단 기업의 <span>비즈니스 메이트</span> SK 머티리얼즈</p>
+            </header> <!-- End of .heading -->
+
+            <section class="contents">
+                <ul>
+                    <li><a href="#"><span>기업개요</span></a></li>
+                    <li><a href="#"><span>CEO의 인사말</span></a></li>
+                    <li><a href="#"><span>연혁</span></a></li>
+                    <li><a href="#"><span>이사회</span></a></li>
+                </ul>
+            </section> <!-- End of .contents -->
+        </section> <!-- End of .section1 -->
+
+        <section class="section2">
+            <header class="heading">
+                <h2>Products</h2>
+                <p><span>세계 시장점유율 1, 2위를 유지</span>하며 독보적인 경쟁력을 확보하고 있습니다.</p>
+            </header> <!-- End of .heading -->
+
+            <section class="contents">
+                <ul class="productTab">
+                    <li><a class="prod1" onclick="return false" href="#">NF3</a></li>
+                    <li><a class="prod2" onclick="return false" href="#">SiH4</a></li>
+                    <li><a class="prod3" onclick="return false" href="#">WF6</a></li>
+                    <li><a class="prod4" onclick="return false" href="#">SiH2Cl2</a></li>
+                    <li><a class="prod5" onclick="return false" href="#">Si2H6</a></li>
+                </ul>
+                <ul class="products">
+                    <li class="prod1"> <!-- NF3 -->
+                        <img src="{% static 'img/NF3_back.jpg' %}" alt="삼불화질소">
+                        <article>
+                            <h3>Application</h3>
+                            <p>NF3는 반도체, TFT-LCD 및 태양전지의 제조공정에 사용되며, CVD 공정 후 Chamber 내부벽의 잔류물을 제거하기 위한 용도로 사용됩니다.</p>
+                            <h3>Specification</h3>
+                            <table>
+                                <caption class="hidden">
+                                    삼불화질소 상세정보
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ITEM</th>
+                                    <th scope="col" colspan="2">SPECIFICATION</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Purity</th>
+                                    <td>NF3</td>
+                                    <td>99.999%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="6">Impurity<br>(ppmv)</th>
+                                    <td>O2+Ar</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CF4</td>
+                                    <td>&lt; 10.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CO2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2O</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>SF6</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </li>
+                    <li class="prod2"> <!-- SiH4 -->
+                        <img src="{% static 'img/SiH4_back.jpg' %}" alt="모노실란">
+                        <article>
+                            <h3>Application</h3>
+                            <p>SiH4는 반도체, TFT_LCD 및 태양전지 제조공정에 사용되며, 반도체에서는 Si중심의 막질 증착을, TFT_LCD에서는 유리기판 위 a-Si 증착을 위해
+                                사용되고 있습니다.</p>
+                            <h3>Specification</h3>
+                            <table>
+                                <caption class="hidden">
+                                    모노실란 상세정보
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ITEM</th>
+                                    <th scope="col" colspan="2">SPECIFICATION</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Purity</th>
+                                    <td>SiH4</td>
+                                    <td>99.999%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="6">Impurity<br>(ppmv)</th>
+                                    <td>O2+Ar</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>H2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CO</td>
+                                    <td>&lt; 0.1</td>
+                                </tr>
+                                <tr>
+                                    <td>CO2</td>
+                                    <td>&lt; 0.1</td>
+                                </tr>
+                                <tr>
+                                    <td>CH4</td>
+                                    <td>&lt; 0.1</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </li>
+                    <li class="prod3"> <!-- WF6 -->
+                        <img src="{% static 'img/WF6_back.jpg' %}" alt="육불화텅스텐">
+                        <article>
+                            <h3>Application</h3>
+                            <p>WF6는 반도체 공정에 사용되며, CVD 공정에서 WF6를 주입하여 Metal Contact 형성에 사용됩니다.</p>
+                            <h3>Specification</h3>
+                            <table>
+                                <caption class="hidden">
+                                    육불화텅스텐 상세정보
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ITEM</th>
+                                    <th scope="col" colspan="2">SPECIFICATION</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Purity</th>
+                                    <td>WF6</td>
+                                    <td>99.9995%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="6">Impurity<br>(ppmv)</th>
+                                    <td>O2+Ar</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>HF</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Na</td>
+                                    <td>&lt; 10</td>
+                                </tr>
+                                <tr>
+                                    <td>Mg</td>
+                                    <td>&lt; 10</td>
+                                </tr>
+                                <tr>
+                                    <td>Al</td>
+                                    <td>&lt; 10</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </li>
+                    <li class="prod4"> <!-- SiH2Cl2 -->
+                        <img src="{% static 'img/SiH2Cl2_back.jpg' %}" alt="다이클로로실란">
+                        <article>
+                            <h3>Application</h3>
+                            <p>SiH2Cl2는 Si를 함유하는 막질 증착에 사용되는 가스입니다. 또한 SiH2Cl2는 에피텍셜 실리콘 증착을 위해서도 사용됩니다.</p>
+                            <h3>Specification</h3>
+                            <table>
+                                <caption class="hidden">
+                                    다이클로로실란 상세정보
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ITEM</th>
+                                    <th scope="col" colspan="2">SPECIFICATION</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Purity</th>
+                                    <td>SiH2Cl2</td>
+                                    <td>99.96%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="6">Impurity<br>(ppmv)</th>
+                                    <td>O2+Ar</td>
+                                    <td>≤ 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2</td>
+                                    <td>≤ 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>H2</td>
+                                    <td>≤ 10.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CO</td>
+                                    <td>≤ 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CO2</td>
+                                    <td>≤ 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CH4</td>
+                                    <td>≤ 1.0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </li>
+                    <li class="prod5"> <!-- Si2H6 -->
+                        <img src="{% static 'img/Si2H6_back.jpg' %}" alt="다이실란">
+                        <article>
+                            <h3>Application</h3>
+                            <p>Si2H6은 반도체 미세화 공정에서 박막 증착시 저온, 고속으로 균일한 막질 형성에 사용됩니다.</p>
+                            <h3>Specification</h3>
+                            <table>
+                                <caption class="hidden">
+                                    다이실란 상세정보
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ITEM</th>
+                                    <th scope="col" colspan="2">SPECIFICATION</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Purity</th>
+                                    <td>Si2H6</td>
+                                    <td>99.99%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="6">Impurity<br>(ppmv)</th>
+                                    <td>O2+Ar</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>N2</td>
+                                    <td>&lt; 2.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CO2</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>CH4</td>
+                                    <td>&lt; 1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>SiH4</td>
+                                    <td>&lt; 500</td>
+                                </tr>
+                                <tr>
+                                    <td>Si3H8</td>
+                                    <td>&lt; 50</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </li>
+                </ul>
+            </section> <!-- End of .contents -->
+        </section> <!-- End of .section2 -->
+
+        <section class="section3">
+            <header class="heading">
+                <h2>Management Philosophy</h2>
+                <p>주주와 고객, 임직원으로부터 <span>신뢰와 존경을 받는 기업</span>을 지향합니다.</p>
+            </header> <!-- End of .heading -->
+
+            <section class="contents">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'img/quality.jpg' %}" alt="">
+                            <article>
+                                <h3>품질경영</h3>
+                                <p>SK 머티리얼즈는 첨단소재 메이커로서 고품질의 제품과 서비스를 공급하며, 고객만족을 유지해 나가기 위해
+                                    <span>품질경영방침을 수립하여 실시</span>하고 있습니다.</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'img/ethic.jpg' %}" alt="">
+                            <article>
+                                <h3>윤리경영</h3>
+                                <p>SK머티리얼즈는 <span>주주와 고객, 임직원으로부터 신뢰와 존경을 받는 기업</span>이 되고자 윤리경영을 실천하고 있습니다. 2004년 9월
+                                    '임직원 윤리행동 준칙'을 제정, 공표하여 전 임직원이 투명하고 합리적으로 업무를 수행하도록 독려하고 있습니다.</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'img/echo.jpg' %}" alt="">
+                            <article>
+                                <h3>환경경영</h3>
+                                <p>SK 머티리얼즈는 반도체, LCD 및 태양전지 제조공정에 사용되는 특수가스를 생산하는 세계초일류 회사로, 모든 생산활동 및 제품 제조 과정에서 발생할 수
+                                    있는 안전 보건, 환경 영향을 최소화하기 위하여 <span>효율적인 안전보건환경 경영시스템</span>을 수립하여 전 임직원이 이행하고 있으며,
+                                    지역주민과 더불어 쾌적한 삶을 영위할 수 있도록 경영을 하고 있습니다.</p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </section> <!-- End of .contents -->
+
+        </section> <!-- End of .section3 -->
+
+        <section class="section4">
+            <header class="heading">
+                <h2>Relation</h2>
+                <p>SK 머티리얼즈의 다양한 소식을 전합니다.</p>
+            </header> <!-- End of .heading -->
+
+            <section class="contents">
+                <section class="news">
+                    <h3>SK Materials 소식</h3>
+                    <article>
+                        <a href="#">
+                            <img src="{% static 'img/news1.jpg' %}" alt="">
+                        </a>
+                        <h4>
+                            <a href="#">SK트리켐 2018년 부문별 신입 및 경력사원 채용</a>
+                        </h4>
+                        <p>
+                            <a href="#">SK트리켐은 SK머티리얼즈와 일본 트리케미칼사의 합작 법인이며, 반도체 핵심 소재 중 하나인 프리커서(Precursor)의
+                                연구·개발·생산·판매를 목적으로 설립된 SK그룹 관계사입니다.</a>
+                            <span>2017-12-13</span>
+                        </p>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <img src="{% static 'img/news2.jpg' %}" alt="">
+                        </a>
+                        <h4>
+                            <a href="#">SK머티리얼즈, 환경안전품질 분야 최고 경쟁력 인정 받아</a>
+                        </h4>
+                        <p>
+                            <a href="#">SK머티리얼즈(대표이사 임민규)가 환경안전품질 분야에서의 국내 최고 경쟁력을 입증했다. 지난 8월 28일부터 9월 1일까지 충북 청주에서 개최된
+                                ‘전국 품질분임조 경진대회’에서 SK머티리얼즈의 3개…</a>
+                            <span>2017-09-04</span>
+                        </p>
+                    </article>
+
+                </section> <!-- End of .news -->
+                <section> <!-- Right section -->
+                    <div class="board">
+                        <h3>IR 자료실</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    2017년 경영현황 IR자료
+                                    <span>2018-02-07</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2017년 3분기 경영현황 IR자료
+                                    <span>2017-10-26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2017년 2분기 경영현황 IR자료
+                                    <span>2017-07-27</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2017 SKMR Analyst 간담회…
+                                    <span>2017-05-16</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="board">
+                        <h3>사업보고서</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    35기(2016년) 사업보고서
+                                    <span>2017-03-30</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    35기(2016년) 반기보고서
+                                    <span>2016-12-02</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    34기(2015년) 사업보고서
+                                    <span>2016-03-30</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    33기(2014년) 사업보고서
+                                    <span>2015-03-31</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stock">
+                        <h3>주가정보</h3>
+                        <ul>
+                            <li>
+                                현재가
+                                <span id="price">{{ price }}</span>
+                            </li>
+                            <li>
+                                전일대비
+                                <span id="change">{{ change }} {{ change_sign }}</span>
+                            </li>
+                            <li></li>
+                            <li>
+                                KOSPI
+                                <span>2574.76</span>
+                            </li>
+                            <li>
+                                KOSDAQ
+                                <span>913.12</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section> <!-- End of right section -->
+
+            </section> <!-- End of .contents -->
+
+        </section> <!-- End of .section4 -->
+
+        <nav>
+            <a href="#header">TOP</a>
+        </nav>
+
+    </section> <!-- End of #mainContents -->
+</div> <!-- End of Wrap -->
+
+<footer id="footer">
+    <div class="wrap">
+
+        <section>
+            <img class="logo" src="{% static 'img/logo_bw.svg' %}" alt="">
+        </section>
+
+        <section>
+            <nav class="footerMenu">
+                <ul>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">SK윤리경영상담/제보</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </nav>
+
+            <!--
+                <nav class="familySite">
+                    <b href="#">계열사 사이트</b>
+                </nav>
+            -->
+
+            <section class="infomation">
+
+                <address>
+                    <p>
+                        본사 및 공장 : 750-080 경북 영주시 가흥공단로 59-33
+                    </p>
+                    <p>
+                        TEL : 054-630-8114 / FAX : 054-630-8145
+                    </p>
+                    <p>
+                        서울 사무소 : 서울시 종로구 종로33 그랑서울 빌딩 16층
+                    </p>
+                    <p>
+                        TEL : 02-728-0910 / FAX : 02-728-0998
+                    </p>
+                </address>
+
+                <p>Copyright &copy; 2016 SK MATERIALS CO., LTD. ALL RIGHT RESERVED.</p>
+
+            </section>
+
+        </section>
+    </div> <!-- End of Wrap -->
+
+</footer> <!-- End of #footer -->
+<!-- Jquery -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Internal Script -->
+<script src="{% static 'index/js/index.js' %}"></script>
+<!-- ajax -->
+<script src="{% static 'index/js/ajax.js' %}"></script>
+</body>
+</html>

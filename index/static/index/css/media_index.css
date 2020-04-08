@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* Media Query Part */
+@media only screen and (max-width: 450px) {
+	/* CSS Re-define */
+	/* Main Visual Area */
+	#mainVisual { width: 100%; height: auto; margin-top: 50px; }
+	#mainVisual>img { display: block; width: 100%; }
+
+	#mainVisual>.wrap, #slider { display: none; }
+
+
+	/* Section Title Style */
+	.heading { text-align: center; }
+	.heading h2 { margin-top: 60px; margin-bottom: 30px; font-size: 24px; }
+	.heading p { display: none; }
+
+
+
+	/* Section 1 Area */
+	.section1 .contents ul li { float: none; }
+
+	/* Section 1 Contents Link */
+	.section1 .contents ul li a { width: 100%; height: auto; margin: 0 0 15px 0 !important; }
+	.section1 .contents ul>li:nth-child(4) a { margin-bottom: 0 !important; }
+	.section1 .contents ul li a::before { content: ""; display: block; padding-top: 48%; }
+
+	/* Section 1 Contents Text */
+	.section1 .contents ul li span { width: 100%; padding: 15px; box-sizing: border-box; }
+
+
+
+	/* Section 2 Area */
+	.section2 {  }
+
+	/* Product Tab Area */
+	.section2 .contents {  }
+
+	/* Products Area */
+	.products { padding: 0; width: 100%; height: auto; background-color: transparent; }
+	.products::before { content: ""; display: block; padding-top: 71.3333%;padding-bottom: 30px; }
+	.products li { position: absolute; top: 0; left: 0; width: 100%; height: auto; }
+	.products li img { width: 100%; height: auto; padding: 15px 0; background-color: #f60; }
+	.products li article { display: none; }
+
+
+
+	/* Section 3 Area */
+	.section3 .contents ul { width: 100%; }
+	.section3 .contents ul li { width: 32.66666%; margin-right: 1%; height: 100%; }
+	.section3>.contents>ul>li:last-child { margin-right: 0; }
+	.section3 .contents ul li::before { content: ""; display: block; padding-top: 118%; }
+	.section3 .contents ul li a { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+	.section3 .contents ul li img { width: 100%; height: 100%; }
+
+	/* Section 3 Text Area */
+	.section3 .contents ul li a article { top: 69%; }
+	.section3 .contents ul li a article h3 { margin-top: 12%; }
+	.section3 .contents ul li a article p { display: none; }
+
+	/* Section 3 Text Area */
+	.section3 .contents>ul>li:nth-child(1)>a:hover>article,
+	.section3 .contents>ul>li:nth-child(2)>a:hover>article,
+	.section3 .contents>ul>li:nth-child(3)>a:hover>article { top: 69%; }
+
+
+
+	/* Section 4 Area */
+	.news article a:hover, .section4 .contents section:nth-child(2) a:hover { text-decoration: none; }
+
+	/* Section 4 Left Side */
+	.section4 .contents .news { width: 100%; margin: 0; padding: 0; border-right: none; }
+	.section4 .contents .news h3 { display: none; }
+	.section4 .contents .news img { width: 100%; }
+	.section4 .contents .news article { padding: 0 15px; width: auto; margin: 0; }
+	.section4 .contents .news p span { display: none; }
+	.news article:nth-of-type(1) p { margin-bottom: 30px; }
+	.news article:nth-of-type(1), .news article:nth-of-type(2) { float: none; }
+
+	/* Section 4 Right Side */
+	.section4 .contents section:nth-child(2) { display: none; }
+
+
+
+	/* Top Button */
+	#mainContents nav { width: 100%; margin-top: 60px; }
+}
+
+@media only screen and (max-width: 349px) {
+	.productTab li a { font-size: 14px; }
+}
+
+@media only screen and (max-width: 324px) {
+	.productTab li a { font-size: 12px; }
+}

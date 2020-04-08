@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'NanumEB';
+	src: url(../../fonts/NanumGothic-ExtraBold.eot) format("eot"),
+	url(../../fonts/NanumGothic-ExtraBold.woff) format('woff'),
+	url(../../fonts/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'NanumB';
+	src: url(../../fonts/NanumGothic-Bold.eot) format("eot"),
+	url(../../fonts/NanumGothic-Bold.woff) format('woff'),
+	url(../../fonts/NanumGothic-Bold.ttf) format('truetype');
+}
+
+
+/* Common Style */
+* { margin: 0; padding: 0; }
+body { font-family: '돋움'; font-size: 12px; color: #333; line-height: 1.5em }
+ul, ol { list-style: none; }
+a { color: #333; text-decoration: none; }
+img { border: 0; vertical-align: top; }
+/* 이미지를 박스에 넣은경우 하단에 공간이 생기는데, vertical-align:bottom을 주면 이를 없앨 수 있다. 또는 display:block을 줘도 된다. */
+h1, h2, h3, h4, h5, h6 { font-family: 'NanumEB'; font-weight: normal; }
+sub { vertical-align: baseline; }
+
+.logo { width: 172px; height: 60px; }
+.hidden { display: none; }
+
+/* Wrap Box Area */
+.wrap { width: 1000px; margin: 0 auto; }
+
+
+
+/* Header Area */
+#header { position: relative; width: 100%; height: 120px; border-bottom: 1px solid #ccc; z-index: 1000; }
+
+
+/* Logo Area */
+#header>.wrap { position: relative; }
+#header h1 { position: absolute; left: 15px; top: 54px; }
+
+/* Top Menu Area */
+.topMenu { background-color: #f60; }
+.topMenu .wrap { overflow: hidden; }
+.topMenu ul { float: right; padding: 13px 15px 13px 0; }
+.topMenu ul li { float: left; }
+.topMenu ul li a { color: #fff; background: url(../../img/bar_w.jpg) no-repeat right center; padding: 0 5px; }
+.topMenu ul li a img { display: none; }
+.topMenu ul>li:last-child>a { background-image: none; padding-right: 0; }
+
+/* Header Navigator Area */
+#navigator { position: absolute; width: 100%; overflow: hidden; z-index: 500; }
+.depth1 { float: right; overflow: hidden; margin-right: 15px; text-align: right; }
+.depth1::after { content: ""; clear: both;}
+.depth1>li { width: 68px; float: left; padding-top: 35px; margin-right: 60px; }
+.depth1>li:last-child { margin-right: 0; }
+.depth1>li>a { font: 18px 'NanumEB'; }
+.depth1>li>a>span { font: normal 8px '돋움'; display: block; color: #ccc; margin-top: 2px; }
+
+/* depth 2 Navi Area */
+.depth2 { height: 0; margin-top: 15px; overflow: hidden; transition: height .4s ease-out; }
+.depth2>li { height: 30px; text-align: center; }
+.depth2>li>a { font : 12px 'NanumB'; color: #999; }
+
+/* depth 2 Hover Control */
+.depth2>li:hover>a { color: #f60; }
+
+/* depth 2 hover control */
+#navigator:hover .depth2 { height: 150px; }
+
+/* Navigator Background */
+.navbg { position: absolute; top: 120px; left: 0; width: 100%; height: 0px; background-color: #fff; border-bottom: 1px solid #ccc; z-index: 100; }
+
+/* Hamburger Menu */
+#hamburger { display: none; }
+
+
+
+/* Footer Area */
+#footer { width: 100%; background-color: #333; color: #999; overflow: hidden; }
+#footer>.wrap>section { margin: 30px; float: left; }
+#footer>.wrap>section:last-child { margin-left: 0; width: 738px; }
+
+/* Footer Menu */
+.footerMenu { float: left; }
+.footerMenu ul { overflow: hidden; }
+.footerMenu ul li { float: left; }
+.footerMenu ul li a { color: #999; display: block; background: url('../../img/bar_g.jpg') no-repeat center right; margin-left: 5px; padding-right: 5px; }
+.footerMenu ul>li:first-child>a { color: #f60; margin-left: 0; }
+.footerMenu ul>li:last-child>a { padding-right: 0; background: none; overflow: hidden; }
+
+/*
+Family Site
+	.familySite { float: right; position: relative; width: 120px; height: 30px; text-align: center; border: #ccc solid 1px; cursor: pointer; }
+	.familySite b { display: block; width: 100%; height: 100%; }
+	.familySite a, .familySite b { color: #999; font: 14px 'NanumB'; line-height: 30px; }
+*/
+
+/* Information Area */
+.infomation { margin-top: 30px; clear: both; }
+.infomation address { font-style: normal; overflow: hidden; }
+.infomation address>p { width: 320px; float: left; }
+.infomation>p:last-child { margin-top: 15px; }

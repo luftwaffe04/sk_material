@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url(./common.css);
+
+/* Main Visual Area */
+#mainVisual { width: 100%; height: 700px; position: relative; }
+#slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%;  }
+#slider>li { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity .8s ease-in-out; }
+.opacityView { opacity: 1 !important; z-index: 1; cursor: pointer; }
+#mainVisual>img { display: none; }
+
+/* Main Visual List Image Setting */
+#slider>li:nth-child(1) { background: url(../../img/mainVisual1.jpg) no-repeat center; }
+#slider>li:nth-child(2) { background: url(../../img/mainVisual2.jpg) no-repeat center; }
+#slider>li:nth-child(3) { background: url(../../img/mainVisual3.jpg) no-repeat center; }
+#slider>li:nth-child(4) { background: url(../../img/mainVisual4.jpg) no-repeat center; }
+
+/* Bullet Box Style */
+#mainVisual .wrap { position: relative; height: 100%; }
+.bulletBox { position: absolute; bottom: 30px; right: 30px; z-index: 2; }
+
+
+
+/* Main Contents Area */
+#mainContents {}
+
+/* Section Title Style */
+.heading { text-align: center; }
+.heading h2 { margin-top: 60px; margin-bottom: 15px; font-size: 24px; }
+.heading p { margin-bottom: 30px; }
+.heading p span { color: #c30; }
+
+/* Section Contents Area */
+.contents { overflow: hidden; }
+
+
+
+/* Section 1 Area */
+.section1 {}
+.section1 .contents {}
+.section1 .contents ul {}
+.section1 .contents ul li { float: left; }
+
+/* Section 1 Contents Link */
+.section1 .contents ul li a { display: block; width: 499px; height: 240px; position: relative; background: #fff no-repeat center center; }
+
+/* Section 1 Contents Text */
+.section1 .contents ul li span { display: block; width: 439px; font: 18px 'NanumEB'; background-color: rgba(0, 0, 0, .7); color: #fff; padding: 30px; position: absolute; bottom: 0; left: 0; }
+
+/* Section 1 Contents Background */
+.section1 .contents ul>li:nth-child(1) a { background-image: url('../../img/aboutco.jpg'); }
+.section1 .contents ul>li:nth-child(2) a { background-image: url('../../img/ceomessage.jpg'); }
+.section1 .contents ul>li:nth-child(3) a { background-image: url('../../img/history.jpg'); }
+.section1 .contents ul>li:nth-child(4) a { background-image: url('../../img/directors.jpg'); }
+
+/* Section 1 Contents Background Margin */
+.section1>.contents>ul>li:nth-child(1) a, .section1>.contents>ul>li:nth-child(2) a { margin-bottom: 2px; }
+.section1>.contents>ul>li:nth-child(1) a, .section1>.contents>ul>li:nth-child(3) a { margin-right: 2px; }
+
+
+
+/* Section 2 Area */
+.section2 {}
+.section2 .contents {}
+
+/* Product Tab Area */
+.productTab { overflow: hidden; }
+.productTab li { float: left; }
+.productTab li a { display: block; padding: 15px; background-color: #fff; font: 16px 'NanumEB'; }
+
+/* Products Area */
+.products, .products li { width: 970px; height: 346px; }
+.products { position: relative; padding: 15px; background-color: #f60; }
+
+/* Products Area Contents */
+.products li { position: absolute; top: 15px; left: 15px; overflow: hidden; z-index: 0;}
+.products li img, .products li article { width: 485px; height: 346px; }
+.products li img { float: left; }
+.products li article { float: right; background-color: #fff; }
+
+/* Products Area Specification */
+.products li article h3 { margin: 15px; font-size: 16px; }
+.products li article p { margin: 0 15px; text-align: justify; }
+
+/* Products Area Table */
+.products table { width: 455px; margin: 15px; border-collapse: collapse; text-align: center; }
+.products td, .products th { padding: 4px; }
+.products thead { color: #f60; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.products tbody { border-bottom: 1px solid #ccc; }
+.products tr>th:first-child { width: 142px; border-right: 1px solid #ccc; }
+.products tr>td:nth-of-type(1) { width: 140px; border-right: 1px solid #ccc; }
+.products tbody>tr:first-child { border-bottom: 1px solid #ccc; }
+.products tbody tr th, .products tbody tr td { padding: 3px; }
+.products tbody tr:first-child>th, .products tbody tr:first-child>td { padding: 4px; }
+
+/* Product show fisrt time */
+.productTab li:first-child>a { background-color: #f60; color: #fff }
+.products>li:first-child { z-index: 100; }
+
+
+
+/* Section 3 Area */
+.section3 {}
+.section3 .contents {}
+.section3 .contents ul { overflow: hidden; }
+.section3 .contents ul li { float: left; width: 320px; height: 380px; margin-right: 20px; position: relative; }
+.section3 .contents>ul>li:last-child { margin-right: 0; }
+
+/* Section 3 Text Area */
+.section3 .contents ul li a article { width: 100%; height: 100%; background-color: rgba(0, 0, 0, .7); color: #fff; position: absolute; top: 329px; left: 0; }
+.section3 .contents ul li a article h3 { margin-top: 15px; margin-bottom: 30px; text-align: center; font-size: 16px; }
+.section3 .contents ul li a article p { margin: 0 30px; }
+.section3 .contents ul li a article p span { color: #f60; }
+
+/* Section 3 Animation */
+.section3 .contents ul li a article { transition: all .4s ease-out; }
+.section3 .contents>ul>li:nth-child(1)>a:hover>article,
+.section3 .contents>ul>li:nth-child(2)>a:hover>article,
+.section3 .contents>ul>li:nth-child(3)>a:hover>article { top: 0; }
+
+
+
+/* Section 4 Area */
+.section4 {}
+.section4 .contents { overflow: hidden; }
+.section4 .contents h3 { font-size: 16px; margin: 15px 0; }
+
+/* Section 4 Left Side */
+.news { float: left; width: 600px; border-right: 1px solid #ccc; margin-left: 15px; padding-right: 30px;}
+.news article { width: 285px; }
+.news article:nth-of-type(1) { float: left; margin-right: 15px; }
+.news article:nth-of-type(2) { float: right; }
+.news article h4 { font-weight: normal; margin: 15px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: '돋움'; }
+.news article h4 a { color: #f60; }
+.news article p span { display: block; margin-top: 15px; }
+.news article a:hover { text-decoration: underline; }
+
+/* Section 4 Right Side */
+.section4 .contents section:nth-child(2) { float: right; width: 309px; margin: 0 15px 0 30px; }
+.section4 .contents section:nth-child(2) a:hover { text-decoration: underline; }
+
+/* Section 4 Board */
+.board li { margin-bottom: 2px; }
+.board span { float: right; }
+.board a { display: block; background: url("../../img/bullet.jpg") no-repeat center left; padding-left: 10px; }
+
+/* Section 4 Stock */
+.stock {}
+.stock ul { overflow: hidden; }
+.stock ul li { float: left; margin-bottom: 10px; margin-right: 15px; }
+.stock ul li span { margin-left: 10px; }
+/* Stock float */
+.stock ul li:nth-of-type(1), .stock ul li:nth-of-type(2) { font: 16px 'NanumB'; }
+.stock ul li:nth-of-type(4), .stock ul li:nth-of-type(5) { font: bold 12px '돋움'; }
+.stock ul li:nth-of-type(2) { margin-right: 0; }
+.stock ul li:nth-of-type(3) { margin: 0; clear: both; }
+/* Stock span */
+.stock ul li:nth-of-type(1) span { display: block; float: right; line-height: 1em; font-size: 24px; }
+.stock ul li:nth-of-type(2) span { color: #f60 }
+.stock ul li:nth-of-type(4) span, .stock ul li:nth-of-type(5) span { font-weight: normal; color: #f60; }
+
+
+
+/* Top Button */
+#mainContents nav { width: 1000px; clear: both; overflow: hidden; }
+#mainContents nav a { float: right; display: block; font: 16px 'NanumEB'; padding: 20px 15px; background-color: #f60; color: #fff; }

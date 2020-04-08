@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7f69e45-4101-4998-a7c6-0bf736156438" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ProjectId" id="1ZzKSPURptmkDbsU0qnGlCcZy0B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../post" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\qaz84\Desktop\sk\index\static\index\css" />
+      <recent name="C:\Users\qaz84\Desktop\sk\index\static\index\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="sk" type="Python.DjangoServer" factoryName="Django server">
+      <module name="sk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="sk.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7f69e45-4101-4998-a7c6-0bf736156438" name="Default Changelist" comment="" />
+      <created>1585836481262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585836481262</updated>
+      <workItem from="1585836487834" duration="3092000" />
+      <workItem from="1586077272472" duration="11177000" />
+      <workItem from="1586168332837" duration="2858000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1237" y="118" key="FileChooserDialogImpl" timestamp="1586094081377">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1237" y="118" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586094081377" />
+    <state x="-1237" y="118" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585836708830" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586168612088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586093836552" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586168612088" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586168612088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586093836551" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586168612088" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586168612087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586093836550" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586168612087" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586168612088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586093836551" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586168612088" />
+    <state x="450" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585836724010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="62" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585836724010" />
+    <state x="-1605" y="72" width="1514" height="716" maximized="true" key="dock-window-1" timestamp="1586085785018">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1605" y="72" width="1514" height="716" maximized="true" key="dock-window-1/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586085785018" />
+    <state x="-939" y="124" width="747" height="608" key="find.popup" timestamp="1586085703381">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-939" y="124" width="747" height="608" key="find.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586085703381" />
+    <state x="522" y="199" width="618" height="538" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586079076308" />
+    <state x="-1274" y="366" width="709" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1585839437811">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1274" y="366" width="709" height="307" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585839437811" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586078146572">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586078146572" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../pythontest.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
